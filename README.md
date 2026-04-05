@@ -1,1 +1,1 @@
-Ahoj svete
+cus bus
