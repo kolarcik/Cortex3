@@ -1,1 +1,1 @@
-cus bus
+ahoj kamo
