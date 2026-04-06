@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pyodide Game Demo</title>
+  <link rel="stylesheet" href="static/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Pyodide Game Demo</h1>
+    <div class="controls">
+      <button id="btn-pause">Pause</button>
+      <button id="btn-restart">Restart</button>
+      <span id="score">Score: 0</span>
+    </div>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <p class="hint">Ovládání: šipky / WASD nebo dotyk</p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+  <script src="static/main.js"></script>
+</body>
+</html>

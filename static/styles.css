@@ -1,0 +1,8 @@
+*{box-sizing:border-box;font-family:Inter,Segoe UI,Arial,sans-serif}
+body{background:#0f172a;color:#e6eef8;display:flex;align-items:center;justify-content:center;height:100vh;margin:0}
+.container{max-width:900px;padding:12px}
+canvas{display:block;background:#071025;border:2px solid #123;box-shadow:0 6px 18px rgba(2,6,23,.6);margin-top:12px;width:100%;height:auto}
+.controls{display:flex;gap:8px;align-items:center}
+button{background:#0ea5a4;border:none;padding:8px 12px;color:#032;cursor:pointer;border-radius:6px}
+.hint{opacity:.8;margin-top:8px}
+#score{margin-left:12px;font-weight:600}
