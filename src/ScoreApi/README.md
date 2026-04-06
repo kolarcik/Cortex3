@@ -15,3 +15,11 @@ Config:
 
 CORS:
 - By default AllowAnyOrigin; modify in Program.cs for production to restrict frontend origin.
+
+CI workflow behavior changed:
+- Workflows now ignore pushes and pull requests targeting the 'main' branch to avoid triggering CI redundantly on protected/main merges.
+- This repository-level change was applied to .github/workflows/ci.yml (push.branches-ignore and pull_request.branches-ignore set for 'main').
+
+Reason: reduce duplicate CI runs and rely on branch protection rules to require CI on PRs before merge; keeps main merge workflows controlled.
+
+Commit note (local changes only): "ci: ignore main branch for push and pull_request to reduce redundant runs"
