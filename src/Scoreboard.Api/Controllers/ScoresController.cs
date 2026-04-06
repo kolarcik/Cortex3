@@ -47,8 +47,8 @@ namespace Scoreboard.Api.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var token = Request.Headers["X-Admin-Token"].FirstOrDefault();
-            var admin = _config.GetValue<string>("ADMIN_TOKEN") ?? Environment.GetEnvironmentVariable("ADMIN_TOKEN");
+            var token = Request?.Headers["X-Admin-Token"].FirstOrDefault();
+            var admin = _config?.GetValue<string>("ADMIN_TOKEN") ?? Environment.GetEnvironmentVariable("ADMIN_TOKEN");
             if (string.IsNullOrEmpty(admin) || token != admin) return Forbid();
 
             var s = await _db.Scores.FindAsync(id);
