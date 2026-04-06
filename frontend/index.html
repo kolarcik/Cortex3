@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pyodide Canvas Game Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Pyodide Canvas Game (Demo)</h1>
+    <div class="controls">
+      <button id="pauseBtn">Pause</button>
+      <button id="restartBtn">Restart</button>
+      <span id="score">Score: 0</span>
+    </div>
+  </header>
+
+  <main>
+    <canvas id="gameCanvas" width="800" height="480"></canvas>
+    <p class="hint">Use arrow keys or WASD to move. Touch to move/tap target on mobile.</p>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+  <script src="pyodide_loader.js"></script>
+</body>
+</html>
